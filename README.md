@@ -1,31 +1,10 @@
-# UDP Telemetry Mini-RFC
+# Results Directory
 
-This repository contains a lightweight UDP-based telemetry protocol
-implementation and its accompanying Mini-RFC.
+This directory stores logs, CSV outputs, and PCAP files generated
+during experimental evaluation runs.
 
-The protocol supports:
-- Batched sensor data transmission
-- Sequence-based loss and duplicate detection
-- Optional ACK-based reliability
-- Adaptive heartbeat monitoring
-- Reordering of out-of-order packets
-- Performance and CPU metrics collection
-
-## Repository Structure
-
-- `server/` : UDP telemetry server
-- `sensors/` : Humidity and light sensor implementations
-- `scripts/` : Reproducible experiment scripts
-- `RFC/` : Final Mini-RFC document
-- `results/` : Experimental output artifacts
-
-## Requirements
-
-- Python 3.9+
-- Linux (for tc netem)
-
-## How to Run
-
-### Start Server
-```bash
-python3 server/server_oop.py
+Typical artifacts include:
+- telemetry_log.csv
+- device_status.csv
+- metrics_summary.txt
+- *.pcap
